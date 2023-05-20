@@ -8,7 +8,7 @@ def patient_login():
     driver = webdriver.Chrome()
     driver.get("http://127.0.0.1:8000/patient/patientlogin")  # Replace with the actual login page URL
     driver.maximize_window()
-    assert "Blood Bank Management System" in driver.title  # Replace with the expected title of the login page
+    assert "Patient Login" in driver.title  # Replace with the expected title of the login page
     
     email_field = driver.find_element(By.ID, "id_username")  # Replace with the correct ID for the email field
     password_field = driver.find_element(By.ID, "id_password")  # Replace with the correct ID for the password field
